@@ -79,7 +79,7 @@ Follow the setup as mentioned in MixOE [implementation](https://github.com/zjyst
 
 3. Auxiliary outlier dataset perturbations
 
-    train_mixoe_outl.py takes in ```outlier_num``` and ```outlier_classes``` parameters for sampling different number of outliers and comprising the auxiliary outlier dataset of ranging diversity.
+    [train_mixoe_outl.py](train/train_mixoe_outl.py) takes in ```outlier_num``` and ```outlier_classes``` parameters for sampling different number of outliers and comprising the auxiliary outlier dataset of ranging diversity.
 
 4. Triplet combinations
 
@@ -123,8 +123,8 @@ Do not forget to change ```data_dir``` parameter while running your code as well
 We find that:
 - Mixup with labels is as efficient for fine-grained setup as the complete MixOE.
 - the large size of the auxiliary outlier dataset is important only in coarse-grained setup.
-- (I1, I1, I2) triplet in combination with MixOE gives the most improvement over the other triplets for coarse-grained setup over the previous best result, MixOE.
-- metric learning approach does not improve fine-grained settings.
+- (I1; I1; I2) triplet in combination with MixOE gives the most improvement over the other triplets for coarse-grained setup over the previous best result, MixOE.
+- metric learning approach does not improve fine-grained settings, neither by itself or with MixOE combination.
 
 ### Mixup with labels accuracy:
 ![Mixup with labels accuracy](media/label_mix_acc_10.png)
@@ -136,13 +136,13 @@ We find that:
 ![Mixup with labels fine-grained TNR](media/label_mix_fine_10.png)
 
 
-### Coarse-grained results for (I1, I1, I2)
+### Coarse-grained results for (I1; I1; I2)
 
 Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
 
 ![i1_i1_i2_coarse](media/coarse_all_i1_i1_i2.png)
 
-### Coarse-grained results for (I1, I1, O)
+### Coarse-grained results for (I1; I1; O)
 
 Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
 
