@@ -148,9 +148,6 @@ Green colour indicates triplet loss with standard cross-entropy, and blue is wit
 
 ![i1_i1_o_coarse](media/fine_all.png)
 
-### Coarse-grained results for (I,O; I1; I2)
-=
-
 <a name="contributing"></a>
 ## Contributing
 
