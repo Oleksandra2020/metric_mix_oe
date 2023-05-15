@@ -1,0 +1,8 @@
+torch
+torchvision
+tqdm
+tensorboard
+wandb
+matplotlib
+pandas
+faiss
