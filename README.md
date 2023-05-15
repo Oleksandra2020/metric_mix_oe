@@ -136,23 +136,20 @@ We find that:
 ![Mixup with labels fine-grained TNR](media/label_mix_fine_10.png)
 
 
-### Coarse-grained results for (I1; I1; I2)
+### Coarse-grained results for all triplets
 
 Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
 
-![i1_i1_i2_coarse](media/coarse_all_i1_i1_i2.png)
+![i1_i1_i2_coarse](media/coarse_all.png)
 
-### Coarse-grained results for (I1; I1; O)
+### Fine-grained results for all triplets
 
 Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
 
-![i1_i1_o_coarse](media/coarse_all_i1_i1_o.png)
+![i1_i1_o_coarse](media/fine_all.png)
 
 ### Coarse-grained results for (I,O; I1; I2)
-
-Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
-
-![io_i1_i2_rand_coarse](media/coarse_all_io_i1_i2_rand.png)
+=
 
 <a name="contributing"></a>
 ## Contributing
