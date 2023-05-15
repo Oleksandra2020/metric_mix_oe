@@ -30,8 +30,8 @@ The thesis focuses on the use of two methods for training more robust models reg
 
 2. Metric learning in the form of triplet loss
     - different types of triplets are used:
-        - I1, I1, I2
-        - I1, I1, O
+        - I1; I1; I2
+        - I1; I1; O
         - I1,O; I1; I2
         - I1,O; I1; O,
 
@@ -138,19 +138,19 @@ We find that:
 
 ### Coarse-grained results for (I1, I1, I2)
 
-Green colour indicates triplet loss with standard cross-entropy, and purple is with MixOE.
+Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
 
 ![i1_i1_i2_coarse](media/coarse_all_i1_i1_i2.png)
 
 ### Coarse-grained results for (I1, I1, O)
 
-Green colour indicates triplet loss with standard cross-entropy, and purple is with MixOE.
+Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
 
 ![i1_i1_o_coarse](media/coarse_all_i1_i1_o.png)
 
 ### Coarse-grained results for (I,O; I1; I2)
 
-Green colour indicates triplet loss with standard cross-entropy, and purple is with MixOE.
+Green colour indicates triplet loss with standard cross-entropy, and blue is with MixOE.
 
 ![io_i1_i2_rand_coarse](media/coarse_all_io_i1_i2_rand.png)
 
