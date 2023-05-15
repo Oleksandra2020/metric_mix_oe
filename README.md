@@ -4,6 +4,16 @@ Code for thesis: **"Mixup and Metric Learning in Out-of-Distribution Detection"*
 
 ## Table of contents
 
+1. [ Description. ](#desc)
+2. [ Installation. ](#installation)
+3. [ Dataset setup. ](#data)
+4. [ Code structure. ](#codestr)
+5. [ Usage. ](#usg)
+6. [ Results. ](#results)
+7. [ Contributing. ](#contributing)
+8. [ License. ](#license)
+
+<a name="desc"></a>
 ## Description
 
 The thesis focuses on the use of two methods for training more robust models regarding out-of-distribution (OoD) examples. The model and dataset setup is based on MixOE [implementation](https://github.com/zjysteven/MixOE) and the codes for this setup is also taken from MixOE. The OoD testing settings are divided between fine- and coarse-grained examples. The former are derived from the domain of inliers, and the latter are completely different from inliers. There are two kinds of tasks we are trying to solve:
@@ -33,6 +43,7 @@ The thesis focuses on the use of two methods for training more robust models reg
 
 We also use combination of metric learning approach and MixOE.
 
+<a name="installation"></a>
 ## Installation
 
 ```bash
@@ -41,10 +52,12 @@ git clone https://github.com/Oleksandra2020/metric_mix_oe
 pip install -r requirements.txt
 ```
 
+<a name="data"></a>
 ## Dataset setup
 
 Follow the setup as mentioned in MixOE [implementation](https://github.com/zjysteven/MixOE/blob/main/data/README.md). Five datasets in total are used: Car, Bird, Butterfly, Aircraft and WebVision 1.0.
 
+<a name="codestr"></a>
 ## Code structure
 
 1. Scripts
@@ -83,6 +96,7 @@ Follow the setup as mentioned in MixOE [implementation](https://github.com/zjyst
 - [merge_csv_files_metric.py](plot_funcs/merge_csv_files_metric.py) creates plots with the results for the triplet combinations described above.
 
 
+<a name="usg"></a>
 ## Usage
 
 1. Script generation
@@ -103,6 +117,7 @@ Follow the setup as mentioned in MixOE [implementation](https://github.com/zjyst
 
 Do not forget to change ```data_dir``` parameter while running your code as well as where to save your results.
 
+<a name="results"></a>
 ## Results
 
 We find that:
@@ -139,12 +154,13 @@ Green colour indicates triplet loss with standard cross-entropy, and purple is w
 
 ![io_i1_i2_rand_coarse](media/coarse_all_io_i1_i2_rand.png)
 
+<a name="contributing"></a>
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
-
+<a name="license"></a>
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
